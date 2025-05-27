@@ -1,3 +1,97 @@
+* {
+    font-size: 14px;
+}
+
+:root {
+    /* from darkest to light */
+    /* header? */
+    --pakistan-green: #243010;
+    /* dark accent */
+    --cal-poly-green: #2a3c24;
+    /* background */
+    --apple-green: #87a330;
+    /* lighter accent */
+    --yellow-green: #a1c349;
+    /* text color */
+    --sage: #cad593;
+}
+
 body {
-    background-color: rebeccapurple;
+    background-color: var(--apple-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header {
+    background-color: var(--pakistan-green);
+    padding: 1rem;
+    align-self: stretch;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+header > .logo {
+    color: var(--sage)
+}
+header > .logo > p {
+    font-size: .8rem;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+button {
+    flex-grow: 0;
+    flex-basis: 0;
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+
+}
+
+button:hover {
+    background-color: var(--yellow-green);
+}
+
+
+nav > button {
+    background-color: var(--apple-green);
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#content {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.389);
+}
+
+.logo {
+    font-style: italic;
+    color: var(--cal-poly-green);
+}
+
+.logo > p {
+    font-size: 1.25rem;
+}
+
+.story {
+    padding: 5rem;
+    font-size: 1.5rem;
+    color: var(--sage)
 }
