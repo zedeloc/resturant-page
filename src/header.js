@@ -1,3 +1,8 @@
+import { buildHome } from "./home.js";
+import { buildMenu } from "./menu.js";
+import { buildContact } from "./contact.js";
+export { buildContact, buildHome, buildMenu }
+
 export function buildHeader() {
     const header = document.querySelector('header');
     const nav = document.createElement('nav');
@@ -33,9 +38,16 @@ export function buildHeader() {
 
     buttonMenu.addEventListener("click", () => {
         clearContent();
+        buildMenu();
+        
     })
 
     buttonAbout.addEventListener("click", () => {
         clearContent();
+        buildContact();
     })
+}
+
+function clearContent() {
+    content.replaceChildren();
 }
