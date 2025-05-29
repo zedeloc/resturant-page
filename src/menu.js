@@ -6,13 +6,15 @@ import imageTwoPeanutHalves from './images/seiya-maeda-__LYlJ8N_jo-unsplash.jpg'
 export function buildMenu() {
     const pageTitle = document.createElement('h1');
     const menuContainer = document.createElement('div')
+    const logoPhrase = document.createElement('p');
     menuContainer.classList.add('the-menu')
     pageTitle.textContent = 'Menu';
     pageTitle.classList.add('logo')
+    logoPhrase.textContent = "Gastric delights inspired by gastric events...";
     const splotchLogoLarge = document.createElement('img');
     splotchLogoLarge.classList.add('splotch-logo-large');
     splotchLogoLarge.src = splotch;
-    pageTitle.append(splotchLogoLarge)
+    pageTitle.append(splotchLogoLarge, logoPhrase)
     content.appendChild(pageTitle)
     // Two Peanut Halves In Tummy Sauce
     const descriptTwoPeanutHalves = "Two peanut halves swimmin' in an organic and ethically sourced acidic tummy sauce. No two tummy sauces are the same. We get them all from a variety local sources."

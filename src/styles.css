@@ -39,10 +39,10 @@ header {
 
 header > .logo {
     color: var(--sage);
-    background-color: rgba(0, 0, 0, 0.323);
+
     border-radius: 100%;
     margin-top: 0;
-    box-shadow: 0 0 4px 1px var(--apple-green);
+    box-shadow: none
 }
 
 
@@ -98,10 +98,11 @@ h2 {
     font-style: italic;
     color: var(--sage);
     background-color: var(--pakistan-green);
-    border-radius: 150%;
+    border-radius: 100%;
     display: inline;
     margin-top: 2rem    ;
-        box-shadow: 0 0 4px 1px var(--apple-green);
+    box-shadow: 0 0 4px 1px var(--apple-green);
+    /* height: 160px; */
 }
 
 .logo > p {
