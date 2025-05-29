@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    height: 100vh;
 }
 
 header {
@@ -84,12 +84,13 @@ h2 {
 
 #content {
     width: 1200px;
-    height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.389);
+    margin-bottom: auto;
     flex-grow: 1;
 }
 
