@@ -38,8 +38,14 @@ header {
 }
 
 header > .logo {
-    color: var(--sage)
+    color: var(--sage);
+    background-color: rgba(0, 0, 0, 0.323);
+    border-radius: 100%;
+    margin-top: 0;
+    box-shadow: 0 0 4px 1px var(--apple-green);
 }
+
+
 header > .logo > p {
     font-size: .8rem;
 }
@@ -78,16 +84,23 @@ h2 {
 
 #content {
     width: 1200px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.389);
+    flex-grow: 1;
 }
 
 .logo {
     font-style: italic;
-    color: var(--cal-poly-green);
+    color: var(--sage);
+    background-color: var(--pakistan-green);
+    border-radius: 150%;
+    display: inline;
+    margin-top: 2rem    ;
+        box-shadow: 0 0 4px 1px var(--apple-green);
 }
 
 .logo > p {
@@ -134,6 +147,13 @@ h2 {
 
 }
 
+.menu-item-description::before {
+    content: "Description: ";
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+
 .menu-item-price {
     font-style: italic;
     font-weight: 700;
@@ -142,4 +162,18 @@ h2 {
 
 .menu-item-price::before {
     content: "$";
+}
+.splotch-logo {
+    width: 30px;
+    display: inline-block   ;
+
+}
+
+.splotch-logo-large {
+    width: 100px;
+    display: inline-block;
+}
+
+.contact-form {
+    margin-top: 4rem;
 }

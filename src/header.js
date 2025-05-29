@@ -1,6 +1,7 @@
 import { buildHome } from "./home.js";
 import { buildMenu } from "./menu.js";
 import { buildContact } from "./contact.js";
+import splotch from "./images/splotch.png";
 export { buildContact, buildHome, buildMenu }
 
 export function buildHeader() {
@@ -11,6 +12,9 @@ export function buildHeader() {
     const restaurantLogoDivSmall = document.createElement('div');
     const logoSmall = document.createElement('h2');
     const logoPhraseSmall = document.createElement('p');
+    const splotchLogo = document.createElement('img')
+    splotchLogo.classList.add('splotch-logo');
+    splotchLogo.src = splotch;
     // nav buttons
     const buttonHome = document.createElement('button')
     buttonHome.classList.add('button-home', 'nav-button');
@@ -20,17 +24,18 @@ export function buildHeader() {
     buttonMenu.classList.add('button-menu', 'nav-button');
     buttonMenu.textContent = 'Menu';
     // 
-    const buttonAbout = document.createElement('button')
-    buttonAbout.classList.add('button-about', 'nav-button');
-    buttonAbout.textContent = 'About';
+    const buttonContact = document.createElement('button')
+    buttonContact.classList.add('button-contact', 'nav-button');
+    buttonContact.textContent = 'Contact';
     // resturant logo small
     restaurantLogoDivSmall.classList += "logo";
     logoSmall.textContent = "Vomít"
     logoPhraseSmall.textContent = "Gastric delights inspired by gastric events...";
+    logoSmall.append(splotchLogo)
     restaurantLogoDivSmall.append(logoSmall, logoPhraseSmall);
     header.append(restaurantLogoDivSmall, nav);
 
-    nav.append(buttonHome, buttonMenu, buttonAbout)
+    nav.append(buttonHome, buttonMenu, buttonContact)
     buttonHome.addEventListener("click", () => {
         clearContent();
         buildHome()
@@ -42,7 +47,7 @@ export function buildHeader() {
         
     })
 
-    buttonAbout.addEventListener("click", () => {
+    buttonContact.addEventListener("click", () => {
         clearContent();
         buildContact();
     })
