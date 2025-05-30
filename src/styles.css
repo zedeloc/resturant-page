@@ -18,6 +18,7 @@
 
 body {
     background-color: var(--apple-green);
+    color: var(--sage);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,11 +27,12 @@ body {
 
 header {
     background-color: var(--pakistan-green);
-    padding: 1rem;
+    padding: .25rem;
     align-self: stretch;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 2rem;
 
     border-bottom: solid var(--cal-poly-green) 2px;
@@ -110,12 +112,13 @@ h2 {
 }
 
 .story {
-    padding: 5rem;
+    padding: 3rem;
     font-size: 1.5rem;
     color: var(--sage)
 }
 
 .the-menu {
+    margin-top: 3rem;
     display: grid;
     grid-auto-flow: column;
     padding: 1rem;
@@ -178,4 +181,24 @@ h2 {
 
 .contact-form {
     margin-top: 4rem;
+}
+
+.contact-form > h2 {
+    font-size: 48px;
+    margin-bottom: 3rem;
+}
+
+.contact-form > p {
+    font-size: 1.5rem;
+}
+
+.contact-name {
+    font-weight: 700;
+}
+
+.image-homepage {
+    width: 600px;
+    margin-top: 3rem;
+    border: solid var(--sage) 2px;
+    border-radius: 1rem;
 }

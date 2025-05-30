@@ -11,7 +11,7 @@ export function buildContact() {
     restaurantLogoDiv.classList += "logo";
     logo.textContent = "Vomít";
     logoPhrase.textContent = "Gastric delights inspired by gastric events...";
-
+    
     logo.append(splotchLogoLarge)
     restaurantLogoDiv.append(logo, logoPhrase);
     content.append(restaurantLogoDiv, createContactForm());
@@ -27,7 +27,7 @@ function createContactForm() {
     contactUs.textContent = "Contact Us!";
     const ralph = document.createElement('p');
     ralph.classList.add('contact-name');
-    ralph.textContent = "Ralph Hearty";
+    ralph.textContent = "Ralph Hearty - CEO Vomít";
     const phoneNumber = document.createElement('p');
     phoneNumber.textContent = "(123) 456-7890";
     const address = document.createElement('p');

@@ -15,6 +15,9 @@ export function buildHeader() {
     const splotchLogo = document.createElement('img')
     splotchLogo.classList.add('splotch-logo');
     splotchLogo.src = splotch;
+    // 
+    const byDesmond = document.createElement('p');
+    byDesmond.textContent = "By Desmond Cole for The Odin Project";
     // nav buttons
     const buttonHome = document.createElement('button')
     buttonHome.classList.add('button-home', 'nav-button');
@@ -33,7 +36,7 @@ export function buildHeader() {
     logoPhraseSmall.textContent = "Gastric delights inspired by gastric events...";
     logoSmall.append(splotchLogo)
     restaurantLogoDivSmall.append(logoSmall, logoPhraseSmall);
-    header.append(restaurantLogoDivSmall, nav);
+    header.append(restaurantLogoDivSmall, byDesmond, nav);
 
     nav.append(buttonHome, buttonMenu, buttonContact)
     buttonHome.addEventListener("click", () => {
